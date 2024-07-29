@@ -1,0 +1,11 @@
+class Bank{
+
+String nameOfTheAccountHolder;
+int amount;
+double interest;
+
+public 
+
+
+
+}

@@ -1,0 +1,26 @@
+interface I1{
+	int a = 12;
+	public void show();
+	public default void disp(){
+		System.out.println("I1 display method");
+	}
+}
+interface I2 extends I1{
+	public static void disp(){
+		System.out.println("I2 display method");
+	}
+}
+class Test implements I2,I1{
+	public void show(){
+		System.out.println("test method");
+	}
+}
+public class InterfaceExample {
+	public static void main(String[] args) {
+		Test t = new Test();
+		t.show();
+		t.disp();
+		I1.disp();
+
+	}
+}
